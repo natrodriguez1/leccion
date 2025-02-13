@@ -1,0 +1,16 @@
+<div>
+    
+    @for (plato of platos; track plato.idMeal){
+        <div class="card" style="width: 18rem;">
+            <img src={{plato.strMealThumb}} class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{plato.strMeal}}</h5>
+            <p class="card-text">{{plato.strCategory}}</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    } @empty{
+        empty media
+    }
+
+</div>
